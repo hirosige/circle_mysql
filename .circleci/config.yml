@@ -18,5 +18,8 @@ jobs:
           command: docker-compose restart proxy
           name: docker-compose restart proxy
       - run:
+          command: docker-compose exec db /etc/init.d/mysql start
+          name: start mysql container
+      - run:
           command: docker-compose exec db mysql -u root -e"$(cat src/api/db/grant_user.sql)"
           name: prepare database
