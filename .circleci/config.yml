@@ -23,3 +23,9 @@ jobs:
       - run:
           command: docker-compose exec db mysql -u root -e"$(cat src/api/db/grant_user.test.sql)"
           name: prepare database
+      - run:
+          command: docker-compose exec rails rails db:create
+          name: rails db:create
+      - run:
+          command: docker-compose exec rails rails db:migrate
+          name: rails db:migrate
