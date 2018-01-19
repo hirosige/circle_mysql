@@ -5,19 +5,27 @@ services:
       context: ./src/api
     env_file:
       - ./environments/db.env
+      - ./environments/credentials.env
     command: bundle exec puma -C config/puma.rb
     volumes:
       - ./src/api:/webapp
+      - public-data:/webapp/public
+      - tmp-data:/webapp/tmp
+      - log-data:/webapp/log
+      - ./logs/web/rails:/webapp/log
     depends_on:
       - db
 
   db:
-    build:
-      context: provision/db
-    env_file:
-      - ./environments/db.env
+#    build:
+#      context: provision/db
+    image: mysql:5.7
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
     ports:
       - 3306:3306
+    volumes:
+      - db-data:/var/lib/mysql
 
   api:
     build:
@@ -27,6 +35,7 @@ services:
       - tmp-data:/webapp/tmp
     ports:
       - 9000:80
+      -
     depends_on:
       - rails
 
@@ -46,7 +55,13 @@ services:
     build:
       context: provision/front
     volumes:
-      - ./src/front:/webapp
+      - ./src/front:/front
+
+  careers:
+    build:
+      context: provision/careers
+    volumes:
+      - ./src/careers:/webapp
 
   services:
     build:
@@ -58,13 +73,20 @@ services:
     build:
       context: provision/admin
     volumes:
-      - ./src/admin:/webapp
+      - ./src/admin/public:/webapp
 
   yarn_front:
     build:
       context: provision/yarn_front
     volumes:
       - ./src/front:/front
+    command: yarn install
+
+  yarn_careers:
+    build:
+      context: provision/yarn_careers
+    volumes:
+      - ./src/careers:/careers
     command: yarn install
 
   yarn_services:
@@ -74,8 +96,16 @@ services:
       - ./src/services:/services
     command: yarn install
 
+  yarn_admin:
+    build:
+      context: provision/yarn_admin
+    volumes:
+      - ./src/admin:/admin
+    command: yarn install
+
 volumes:
   public-data:
   tmp-data:
   log-data:
   db-data:
+  bundle-data:
