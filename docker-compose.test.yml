@@ -35,7 +35,6 @@ services:
       - tmp-data:/webapp/tmp
     ports:
       - "9000:80"
-      -
     depends_on:
       - rails
 
