@@ -34,7 +34,7 @@ services:
       - public-data:/webapp/public
       - tmp-data:/webapp/tmp
     ports:
-      - 9000:80
+      - "9000:80"
       -
     depends_on:
       - rails
@@ -45,7 +45,7 @@ services:
     volumes:
       - ./logs/web/proxy:/var/log/proxy
     ports:
-      - 80:80
+      - "80:80"
     depends_on:
       - front
       - services
