@@ -20,8 +20,8 @@ services:
 #    build:
 #      context: provision/db
     image: mysql:5.7
-    environment:
-        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    env_file:
+      - ./environments/db.test.env
     ports:
       - 3306:3306
     volumes:
