@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          command: touch environments/credentials.env
+          name: create credentials.env
+      - run:
           command: docker-compose build
           name: docker-compose build
       - run:
