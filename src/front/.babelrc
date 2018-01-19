@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": false,
+        "minify": true
+      }
+    ],
+    "babel-plugin-styled-components-autoprefixer",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style":       true
+      }
+    ]
+  ]
+}

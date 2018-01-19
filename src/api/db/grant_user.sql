@@ -1,0 +1,2 @@
+GRANT ALL PRIVILEGES ON *.* TO 'arms_admin'@'%';
+FLUSH PRIVILEGES;

@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    working_directory: ~/arms_web
+    steps:
+      - checkout
+      - run:
+          command: docker-compose build
+          name: docker-compose build
+      - run:
+          command: docker-compose up -d --scale front=3 --scale admin=3 --scale services=3
+          name: docker-compose up
+      - run:
+          command: docker-compose restart proxy
+          name: docker-compose restart proxy
+#      - run:
+#          command: docker-compose exec db mysql -P 3306 --protocol=tcp -u root -e"$(cat src/api/db/grant_user.sql)"
+#          name: prepare database

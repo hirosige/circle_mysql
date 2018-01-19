@@ -1,0 +1,10 @@
+---
+- hosts:  all
+  become: yes
+
+  roles:
+  - { role: init                   }
+  - { role: initial_install        }
+  - { role: docker                 }
+  - { role: figlet                 }
+  - { role: zsh                    }

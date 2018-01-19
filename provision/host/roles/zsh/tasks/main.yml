@@ -1,0 +1,24 @@
+- name: install zsh
+  yum: name=zsh state=latest
+
+- name: setting up figlet template
+  copy: src=shells dest=/etc/
+
+- name: change default shell to zsh
+  shell: chsh -s /usr/bin/zsh vagrant
+
+- name: change default shell to zsh for root
+  shell: chsh -s $(which zsh)
+
+- name: downlaod and execute oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  become: no
+
+- name: downlaod and execute oh-my-zsh for root
+  shell: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+- name: replace .zshrc
+  copy: src=.zshrc dest=/home/vagrant/
+
+- name: replace .zshrc
+  copy: src=.zshrc dest=/root/

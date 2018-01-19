@@ -1,0 +1,21 @@
+#!/bin/sh
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+
+# build and start containers
+docker-compose build
+docker-compose up -d \
+ --scale front=3 \
+ --scale admin=3 \
+ --scale services=3 \
+ --scale careers=3
+docker-compose restart proxy
+
+# initialize database
+docker-compose exec db mysql -u root -e"$(cat src/api/db/grant_user.sql)"
+docker-compose exec db mysql -u arms_admin -e"show grants;"
+
+docker-compose run rails rake db:create
+docker-compose run rails rake db:migrate
+
+bulc_yarn_install
+bulc_webpack

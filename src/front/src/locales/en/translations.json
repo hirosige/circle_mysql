@@ -1,0 +1,58 @@
+{
+  "header": {
+    "menu":     {
+      "hamburger": "Menu",
+      "home":      "Home",
+      "team":      "Team",
+      "blog":      "Blog",
+      "partners":  "Partners"
+    },
+    "language": {
+      "english": "English",
+      "thai":    "ไทย (เบต้า)"
+    }
+  },
+  "hero":   {
+    "greeting": "Professional business integrator<br/>and high experienced in system integration."
+  },
+  "home":   {
+    "content": {
+      "greeting-title":                   "The new standard in <br/><strong>business and system integration</strong>",
+      "greeting-description":             "We guide and help companies to launch the most scalable websites and applications apps.",
+      "hero-title":                       "We are ARMS,<br/>your trusted<br/>partner",
+      "story-title":                      "Let’s tell the stories that matter",
+      "story-description":                "We are placed in Thailand where the development is skyrocketing.<br/>We provide the best solution to customers as a professional Web developer.<br/>We develop meaningful and useful application by taking advantage of this thriving environment.<br/><strong>And we are</strong>",
+      "key-ingredient-01-title":          "Web Professional",
+      "key-ingredient-01-description":    "Cost-efficiency, techniques and experiences are all integral factors. we provide you the best solution with them!",
+      "key-ingredient-02-title":          "Business To Business",
+      "key-ingredient-02-description":    "We are specialized for B2B, we provide the best support for you with our team!",
+      "key-ingredient-03-title":          "Laboratory-style Offshore",
+      "key-ingredient-03-description":    "We hope there would be the offshore services what only we can provide! we call it ARMS-style offshore!",
+      "latest-blog-title":                "Latest from blog",
+      "latest-blog-description":          "Latest things that you should know",
+      "latest-blog-empty":                "There&#39;re no any post now",
+      "latest-blog-seemore":              "See more",
+      "contact-get-in-touch-title":       "Get in touch",
+      "contact-get-in-touch-description": "Find us here, we are waiting for you",
+      "contact-join-us-title":            "Join us",
+      "contact-join-us-description":      "We are looking for your bright and experienced who love development applications.<br/>If you like challenges and joy of dealing with the most modern technology.",
+      "contact-join-us-button":           "Explore",
+      "contact-map-button":               "Get directions",
+      "contact-map-title":                "Corporate office",
+      "contact-map-detail":               "10/188, 25th Floor<br/>The Trendy Office Building<br/>13 Sukhumvit Road<br/>Khlong Tan, Khlong Toei<br/>Bangkok, 10110",
+      "contact-direct-contact-title":     "Direct contact",
+      "contact-direct-contact-phone":     "Phone: <a href=\"tel:02-168-7238\">02-168-7238</a>‬",
+      "contact-direct-contact-email":     "Email: <a href=\"mailto:all@inquiry.arms-asia.com\">all@inquiry.arms-asia.com</a>",
+      "contact-direct-contact-facebook":  "Facebook: <a href=\"https://www.facebook.com/arms.asia/\">facebook.com/arms.asia</a>",
+      "contact-send-us-title":            "Send us message",
+      "contact-send-us-name":             "Name",
+      "contact-send-us-email":            "Email",
+      "contact-send-us-message":          "Message",
+      "contact-send-us-button":           "Send"
+    },
+    "error":   {
+      "temporarily-unavailable": "Sorry, this service is temporarily unavailable now",
+      "feature-coming-soon":     "This feature is coming soon"
+    }
+  }
+}

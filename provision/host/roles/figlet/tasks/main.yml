@@ -1,0 +1,11 @@
+- name: name host
+  shell: hostname dev.arms-asia.com.dockerhost
+
+- name: install bc
+  yum: name=bc state=latest
+
+- name: install figlet
+  yum: name=figlet state=latest
+
+- name: setting up figlet template
+  copy: src=update_motd_for_figlet.sh dest=/usr/local/bin/

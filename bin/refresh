@@ -1,0 +1,14 @@
+#!/bin/sh
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+
+docker-compose down
+docker-compose build
+docker-compose up -d \
+ --scale front=3 \
+ --scale admin=3 \
+ --scale services=3 \
+ --scale careers=3
+docker-compose restart proxy
+
+bulc_yarn_install
+bulc_webpack

@@ -1,0 +1,81 @@
+version: '3'
+services:
+  rails:
+    build:
+      context: ./src/api
+    env_file:
+      - ./environments/db.env
+    command: bundle exec puma -C config/puma.rb
+    volumes:
+      - ./src/api:/webapp
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: provision/db
+    env_file:
+      - ./environments/db.env
+    ports:
+      - 3306:3306
+
+  api:
+    build:
+      context: provision/nginx
+    volumes:
+      - public-data:/webapp/public
+      - tmp-data:/webapp/tmp
+    ports:
+      - 9000:80
+    depends_on:
+      - rails
+
+  proxy:
+    build:
+      context: provision/proxy
+    volumes:
+      - ./logs/web/proxy:/var/log/proxy
+    ports:
+      - 80:80
+    depends_on:
+      - front
+      - services
+      - admin
+
+  front:
+    build:
+      context: provision/front
+    volumes:
+      - ./src/front:/webapp
+
+  services:
+    build:
+      context: provision/services
+    volumes:
+      - ./src/services:/webapp
+
+  admin:
+    build:
+      context: provision/admin
+    volumes:
+      - ./src/admin:/webapp
+
+  yarn_front:
+    build:
+      context: provision/yarn_front
+    volumes:
+      - ./src/front:/front
+    command: yarn install
+
+  yarn_services:
+    build:
+      context: provision/yarn_services
+    volumes:
+      - ./src/services:/services
+    command: yarn install
+
+volumes:
+  public-data:
+  tmp-data:
+  log-data:
+  db-data:

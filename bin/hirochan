@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Why Why Why cannot connect network initially...
+sudo systemctl restart network
+sudo sysctl -w net.ipv4.ip_forward=1

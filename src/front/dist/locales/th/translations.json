@@ -1,0 +1,58 @@
+{
+  "header": {
+    "menu":     {
+      "hamburger": "เมนู",
+      "home":      "หน้าหลัก",
+      "team":      "ทีมของพวกเรา",
+      "blog":      "บล็อก",
+      "partners":  "พันธมิตร"
+    },
+    "language": {
+      "english": "English",
+      "thai":    "ไทย (เบต้า)"
+    }
+  },
+  "hero":   {
+    "greeting": "ผู้ประกอบธุรกิจแบบมืออาชีพ <br/> และมีประสบการณ์ในการรวมระบบ"
+  },
+  "home":   {
+    "content": {
+      "greeting-title":                   "มาตรฐานใหม่ใน<br/><strong>ธุรกิจและการผสานรวมระบบ</strong>",
+      "greeting-description":             "เราแนะนำและช่วย บริษัท ต่างๆในการเปิดตัวเว็บไซต์และแอพพลิเคชั่นที่ปรับขนาดได้มากที่สุด",
+      "hero-title":                       "เราคือ ARMS<br/>คู่ค้าที่เชื่อถือได้ของคุณ",
+      "story-title":                      "ลองเล่าเรื่องที่สำคัญ",
+      "story-description":                "เราอยู่ในประเทศไทยที่การพัฒนากำลังพุ่งสูงขึ้น <br/> เราให้บริการโซลูชั่นที่ดีที่สุดแก่ลูกค้าในฐานะนักพัฒนาเว็บระดับมืออาชีพ <br/> เราพัฒนาแอพพลิเคชันที่มีความหมายและเป็นประโยชน์โดยใช้ประโยชน์จากสิ่งนี้ สภาพแวดล้อมที่เจริญรุ่งเรือง <br/> <strong> และเราคือ </strong>",
+      "key-ingredient-01-title":          "Web Professional",
+      "key-ingredient-01-description":    "ต้นทุนประสิทธิภาพเทคนิคและประสบการณ์เป็นปัจจัยสำคัญทั้งหมดเราให้คุณทางออกที่ดีที่สุดกับพวกเขา!",
+      "key-ingredient-02-title":          "Business To Business",
+      "key-ingredient-02-description":    "เราเป็นผู้เชี่ยวชาญด้าน B2B เราให้การสนับสนุนที่ดีที่สุดสำหรับคุณกับทีมของเรา!",
+      "key-ingredient-03-title":          "Laboratory-style Offshore",
+      "key-ingredient-03-description":    "เราหวังว่าจะมีบริการจากต่างประเทศเพียงเท่านี้เราก็สามารถเรียกได้ว่าเป็น ARMS แบบ offshore!",
+      "latest-blog-title":                "อัพเดทล่าสุดจากบลอกของเรา",
+      "latest-blog-description":          "รวมอัพเดทล่าสุดของทุกสิ่งที่คุณควรรู้",
+      "latest-blog-empty":                "ไม่มีข้อมูลในขณะนี้",
+      "latest-blog-seemore":              "ดูเพิ่มเติม",
+      "contact-get-in-touch-title":       "ติดต่อเรา",
+      "contact-get-in-touch-description": "พบเราได้ที่นี่ พวกเรารอคุณอยู่",
+      "contact-join-us-title":            "เข้าร่วมกับเรา",
+      "contact-join-us-description":      "เรากำลังมองหาคนที่มีความคิดสร้างสรรค์และสดใสที่รักการพัฒนา <br/> ถ้าคุณชอบความท้าทายและความสุขในการจัดการกับเทคโนโลยีที่ทันสมัยที่สุด",
+      "contact-join-us-button":           "สำรวจ",
+      "contact-map-button":               "ดูเส้นทาง",
+      "contact-map-title":                "ที่ตั้งออฟฟิสหลัก",
+      "contact-map-detail":               "เลขที 10/188, ชั้น 25<br/>The Trendy Office Building<br/>ถนนสุขุมวิท 13<br/>แขวงคลองตัน เขตตลองเตย<br/>กรุงเทพ 10110",
+      "contact-direct-contact-title":     "ติดต่อโดยตรง",
+      "contact-direct-contact-phone":     "โทรศัพท์: <a href=\"tel:02-168-7238\">02-168-7238</a>‬",
+      "contact-direct-contact-email":     "อีเมล: <a href=\"mailto:all@inquiry.arms-asia.com\">all@inquiry.arms-asia.com</a>",
+      "contact-direct-contact-facebook":  "เฟซบุ๊ก: <a href=\"https://www.facebook.com/arms.asia/\">facebook.com/arms.asia</a>",
+      "contact-send-us-title":            "ส่งข้อความหาเรา",
+      "contact-send-us-name":             "ชื่อ",
+      "contact-send-us-email":            "อีเมล",
+      "contact-send-us-message":          "ข้อความ",
+      "contact-send-us-button":           "ส่งข้อความ"
+    },
+    "error":   {
+      "temporarily-unavailable": "ขออภัย ในขณะนี้ระบบไม่สามารถทำงานได้ชั่วคราว",
+      "feature-coming-soon":     "ความสามารถกำลังจะมาในไม่ช้า"
+    }
+  }
+}

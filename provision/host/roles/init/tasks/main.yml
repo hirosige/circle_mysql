@@ -1,0 +1,14 @@
+- name: stop firewalld
+  service: name=firewalld state=stopped enabled=no
+
+- name: install selinux bindings
+  yum: name=libselinux-python state=present
+
+- name: disable selinux
+  selinux: state=disabled
+
+- name: install git
+  yum: name=git state=present
+
+- name: install vim
+  yum: name=git state=present

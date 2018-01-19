@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "stage-0",
+    "stage-3",
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "transform-es2015-arrow-functions",
+    "check-es2015-constants",
+    "transform-es2015-block-scoping",
+    "babel-plugin-espower",
+    "transform-runtime",
+    "transform-class-properties"
+  ]
+}

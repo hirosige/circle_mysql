@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+docker-compose run yarn_admin yarn install
+docker-compose run yarn_front yarn install
+docker-compose run yarn_services yarn install

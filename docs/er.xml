@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<!-- Active URL: http://ondras.zarovi.cz/sql/demo/?keyword=default -->
+<sql>
+  <datatypes db="mssql">
+    <group color="rgb(200,255,255)" label="Numeric">
+      <type label="INT" length="0" quote="" sql="INT"/>
+      <type label="BIGINT" length="0" quote="" sql="BIGINT"/>
+    </group>
+    <group color="rgb(200,200,255)" label="Decimal">
+      <type label="DECIMAL" length="1" quote="" re="DEC" sql="DECIMAL"/>
+    </group>
+    <group color="rgb(255,200,200)" label="Character">
+      <type label="NVARCHAR" length="1" quote="'" sql="NVARCHAR"/>
+    </group>
+    <group color="rgb(255,255,200)" label="Character">
+      <type label="VARBINARY" length="1" quote="'" sql="VARBINARY"/>
+    </group>
+    <group color="rgb(200,255,200)" label="Date &amp; Time">
+      <type label="DATETIME" length="0" quote="'" sql="DATETIME"/>
+    </group>
+    <group color="rgb(200,200,200)" label="Miscellaneous">
+      <type label="BIT" length="0" quote="" sql="BIT"/>
+    </group>
+  </datatypes><table x="312" y="166" name="employees">
+  <row name="id" null="1" autoincrement="1">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="first_name" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="last_name" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="nick_name" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="address" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="user_id" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default><relation table="users" row="id" />
+  </row>
+  <row name="created_at" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <row name="updated_at" null="1" autoincrement="0">
+    <datatype>INT</datatype>
+    <default>NULL</default></row>
+  <key type="PRIMARY" name="">
+    <part>id</part>
+  </key>
+</table>
+  <table x="565" y="21" name="profiles">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="hobby" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="skills" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="employee_id" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default><relation table="employees" row="id" />
+    </row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="37" y="30" name="users">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="email" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="encrypted_password" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="reset_password_token" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="reset_password_sent_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="remember_created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="sign_in_count" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="current_sign_in_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="last_sign_in_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="current_sign_in_ip" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="last_sign_in_ip" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="724" y="150" name="time_cards">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="start_working" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="end_working" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="late_reason" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="leave" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="date" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="employee_id" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default><relation table="employees" row="id" />
+    </row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="727" y="431" name="news">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="title" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="description" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="service_id" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default><relation table="services" row="id" />
+    </row>
+    <row name="employee_id" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default><relation table="employees" row="id" />
+    </row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="41" y="424" name="inquiries">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="title" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="description" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="name" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="email" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="tel" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="answer" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="employee_id" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default><relation table="employees" row="id" />
+    </row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="461" y="492" name="services">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="name" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="created_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="updated_at" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+  <table x="290" y="495" name="sites">
+    <row name="id" null="1" autoincrement="1">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <row name="name" null="1" autoincrement="0">
+      <datatype>INT</datatype>
+      <default>NULL</default></row>
+    <key type="PRIMARY" name="">
+      <part>id</part>
+    </key>
+  </table>
+</sql>

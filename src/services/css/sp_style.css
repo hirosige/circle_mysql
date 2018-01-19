@@ -1,0 +1,592 @@
+body {
+    background-color:#ffffff;
+    color:#333;
+    font-family:"メイリオ",Meiryo,"Hiragino Kaku Gothic Pro","MS PGothic",sans-serif;
+    font-size:16px;
+    margin:0;
+    width: 100%;
+    max-width:768px;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+}
+
+
+/* ホバー */
+.mouseHvr {
+	opacity: 1;
+}
+
+.mouseHvr:hover {
+	opacity: 0.7;
+}
+
+/* ヘッダー */
+#header {
+	width: 100%;
+    padding-top: 0px;
+    
+}
+
+#header .clearfix {
+    display:block;
+    clear:both;
+}
+
+#header .innerBox {
+	width: 980px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+    overflow: hidden;
+}
+
+.common_inner{
+    width:90vw;
+    margin:0 auto;
+}
+/* mv */
+#mv { 
+    width:100%;
+    height: auto;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-image: url(../img/bg_main.jpg);
+    margin-top:70px;
+}
+
+.mv_txt{
+    margin:0 auto;
+    background-size: contain;
+    width:100%;
+    overflow: hidden;
+}
+
+.catch{
+    padding-top:20px;
+    width:100%;
+}
+
+.mv_txt{
+    color:#fff;   
+}
+
+.orange {
+    width:90vw;
+    font-size:18px;
+    font-weight:normal;
+    text-decoration:none;
+    display:inline-block;
+    margin-bottom:1em;
+    margin-top:1em;
+    text-align:center;
+    padding:0.5em 0;
+    color:#fff;
+    background-color: #fda000;
+    border-radius:4px;
+}
+
+/* concept */
+#title-content{
+    padding-top:1.5em;
+    font-size:22px;
+    font-weight:bold;
+}
+
+#concept h3{
+    font-size:1.3em;
+    margin-top:40px;
+    margin-bottom:0px;
+}
+
+
+#concept p{
+    margin-top:0px;
+    width:90vw;
+    text-align: left;
+}
+
+#concept .center{
+    text-align: center;
+}
+
+.pc{
+    width:95vw;
+}
+
+#concept .concept_box img{
+    width:70vw;
+    text-align:center;
+}
+
+#concept .concept_box{
+    text-align:center;
+}
+
+/* LLDS */
+#llds{
+    max-width:768px;
+    height: auto; 
+    margin: 40px 0 0 0; 
+    background: url(../img/bg_blue.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+#llds p{
+    padding-top:20px;
+    color:#fff;
+    font-size:18px;
+}
+
+#llds img {
+    margin:0 auto;
+    display: block;
+    padding-bottom:20px;
+}
+
+
+/* Features */
+.h2Left {
+ font-family: "メイリオ", sans-serif;
+ margin-bottom: 0px;
+}
+
+
+.h2Left strong {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.86rem;
+    margin-right: 0.5em;
+    font-family: 'Montserrat', 'メイリオ' , 'Yu Gothic', sans-serif;
+}
+
+.h2Left p {
+    display: inline-block;
+    font-size: 0.86rem;
+}
+
+.feature_title img{
+    width:210px;
+    margin-top:10px;
+    margin-bottom:-10px;
+}
+
+.feature_box{
+    text-align: center;
+}
+
+.feature_box p{
+    text-align: left;
+}
+
+.feature_box_small{
+    margin: 0 auto 20px auto;
+}
+
+.feature_box_small img{
+    margin: 0 auto;
+    width:100%;
+}
+
+/* Cases */
+.ct{
+    padding-top: 15px;
+}
+
+#cases{
+    background-color: #f5f5f5;
+    margin-top:40px;
+    padding-bottom:20px;
+}
+
+.cases_title img{
+    padding-top:25px;
+    width:140px;
+}
+
+.case1{
+    text-align:center;   
+}
+
+.case2{
+    text-align:center;   
+}
+
+.case1_left{
+    background-color: #297ec2;
+    padding:5px;
+    color:#fff;
+    font-size:16px;
+    font-weight: bold;
+}
+
+
+.case1_right{
+    background-color: #d1e5f0;
+    padding:5px 20px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.case2_left{
+    background-color: #297ec2;
+    padding:5px;
+    color:#fff;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.case2_right{
+    background-color: #d1e5f0;
+    padding:5px 20px;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+/* System */
+.st strong{
+    font-size:26px;
+}
+
+.st p{
+    margin-bottom: -10px;
+}
+
+#system img{
+    width:100%;
+}
+
+#system .system_img1_title{
+    margin-top:10px;
+    width:65%;
+}
+
+#system .system_img2_title{
+    margin-top:10px;
+    width:65%;
+}
+
+
+/* Flow top*/
+.ft strong{
+    padding-top:15px;
+}
+
+#flow_top{
+    background-color: #f5f5f5;
+    margin-top:40px;
+    margin-bottom:-40px;
+    padding-bottom:20px;
+}
+
+.flow_top_title img{
+    padding-top:25px;
+    width:180px;
+}
+
+#flow_top .flow_top_img{
+    width:100%;
+    margin-top:0px;
+}
+
+/* News */
+#news{
+    background-color: #f5f5f5;
+    margin-top:0px;
+    padding-top:1px;
+    padding-bottom:30px;
+}
+
+#news .news_title img{
+    padding-top:0px;
+    width:170px;
+}
+
+#news ul{
+    list-style: none;
+    margin:-10px 0px 0px 0px;
+
+}
+
+#news li {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px #898989 solid;
+    font-size: 14px;
+    line-height: 1.8;
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130px;
+    color: #276f9f;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.txt {
+    padding-left: 130px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+#news li a.link-blank:after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/outlink.png);
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.txt a {
+    color:#292929;
+    text-decoration:none;
+}
+
+.txt a:hover {
+	opacity: 0.7;
+}
+
+/* お問合わせ */
+
+#contact{
+    max-width:768px;
+    height: auto; 
+    margin: 40px 0 0 0; 
+    background: url(../img/bg_contact.jpg) no-repeat center center; 
+    text-align: center;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+.contact_left{
+    color:#fff;
+    width:100%;
+    float: left;
+    text-align: center;
+}
+
+.contact_left p{
+    color:#fff;
+    font-size: 16px;
+    margin-top:30px;
+}
+
+.contact_right{
+    float: left;
+    font-size:20px;
+    width:100%;
+}
+
+.contact_right img{
+    margin:0 auto;
+    width:80%;
+    padding-bottom:20px;
+}
+
+
+/* フッター */
+.footer_gray{
+    background-color:#3c3e42;
+    height: 80px;
+    margin-top:0px;
+    line-height: 70px;
+}
+
+.footer_left{
+    padding:20px 0px 0px 0px;
+    display:inline-block;
+    float: left;
+    width:30%;
+}
+
+.footer_left img{
+    width:100px
+}
+
+.footer_right{
+    float: right;
+    display: inline-block;
+    width:70%;
+}
+
+.footer_right li{
+    float: right;
+    display: inline-block;
+    margin-top: -10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.footer_right a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    color:#fff;
+}
+
+.footer_right a:hover{
+    opacity: 0.7;
+}
+
+.footer_black{
+    background-color: #222;
+    height: 40px;
+    bottom:0;
+    line-height: 15px;
+    text-align: center;
+}
+
+#footer{
+	height: auto;
+    margin:0 auto;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+
+}
+
+#footer .copy{
+    font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color:#fff;
+    margin:0 auto 10px auto;
+    display: inline-block;
+}
+
+/* 共通 */
+
+h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+
+h3{ font-size:20px;
+    margin-top:10px;
+    margin-bottom:0px;
+    width:100%;
+    padding-bottom: 6px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+
+.hosoku{
+  font-size:12px;
+  color:#7c7c7c;
+}
+
+a{
+  color:#2A7DC2;
+}
+
+ul{
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+/* LLDS詳細 */
+.mv_llds{
+    margin:0 auto;
+    background-size: contain;
+    width:100%;
+    overflow: hidden;
+}
+
+.mv_llds p{
+    color: #fff;
+}
+
+.llds_h2{
+    color: #fff;
+    font-size: 24px;
+}
+
+.blue_square{
+  position: relative;
+  display: inline-block;
+  margin: 2em 0;
+  padding: 25px 10px;
+  width:100%;
+  max-width: 1200px;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 3px #2A7DC2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.llds_left img{
+    text-align: center;
+
+}
+
+.llds_right{
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.blue_h3{
+    font-size:20px;
+    color:#2A7DC2;
+    font-weight:bold;
+    display: inline-block;
+    margin-bottom:0;
+    margin-top:20px;
+}
+
+.llds_right p{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.llds_img{
+    text-align: center;
+}
+
+.llds_img img{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.llds_img p{
+    text-align: left;
+}
+
+.space{
+
+    text-align: center;
+}
+
+.banner_llds img{
+    margin-top:20px;
+    width:100%;
+}
+
+.banner_trial img{
+    width:100%;
+    margin-top:5px;
+    margin-bottom:20px;
+}
+
+.mail_link{
+    color:#000000;
+}

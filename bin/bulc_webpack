@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+function error {
+    echo "maybe, command not found in #{$1}"
+}
+
+docker-compose run yarn_admin webpack || error 'admin'
+# docker-compose run yarn_front webpack || error 'front'
+docker-compose run yarn_services webpack || error 'services'
