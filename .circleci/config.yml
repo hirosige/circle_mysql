@@ -2,6 +2,8 @@ version: 2
 jobs:
   build:
     machine: true
+      environment:
+        _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
     working_directory: ~/arms_web
     steps:
       - checkout
